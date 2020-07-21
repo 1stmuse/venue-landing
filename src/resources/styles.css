@@ -28,7 +28,7 @@ body {
 }
 
 .center_wrapper {
-    width: 900px;
+    /* width: 900px; */
     margin:0 auto;
 }
 
@@ -78,10 +78,11 @@ footer .footer_copyright {
 .carrousel_wrapper {
     height:700px;
     overflow: hidden;
+    width: 100vw;
 }
 
 .carrousel_image {
-    
+    width: 100%;
     background-size: cover !important;
 }
 
@@ -152,7 +153,8 @@ footer .footer_copyright {
 ======================*/
 
 .vn_wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     padding: 170px 0px;
 }
 
@@ -217,8 +219,6 @@ footer .footer_copyright {
 /*====================
         HIGHLIGHTS
 ======================*/
-
-
 .highlight_wrapper h2 {
     text-align: center;
     text-transform: uppercase;
