@@ -12,6 +12,7 @@ const Location = () => {
             height='500px'
             frameBorder='0'
             allowFullScreen
+            title='lagos'
             />
 
             <div className='location_tag'>
