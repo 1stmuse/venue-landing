@@ -22,8 +22,6 @@ const MyButton = (props) => {
            />
             {props.text}
            </Button>
-
-       {/* <Button>{props.text} </Button> */}
        </div>
     );
 };
