@@ -34,7 +34,7 @@ class Discount extends Component {
                         >
                             <div className='discount_porcentage'>
                                 <span className='cent'>{this.state.discountStart}% </span>
-                                <sapn>OFF</sapn>
+                                <span>OFF</span>
                             </div>
                         </Fade>
                     </div>
