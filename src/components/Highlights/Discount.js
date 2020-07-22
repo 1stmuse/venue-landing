@@ -33,7 +33,7 @@ class Discount extends Component {
                         onReveal={()=>this.porcentage()}
                         >
                             <div className='discount_porcentage'>
-                                <span>{this.state.discountStart}% </span>
+                                <span className='cent'>{this.state.discountStart}% </span>
                                 <sapn>OFF</sapn>
                             </div>
                         </Fade>
