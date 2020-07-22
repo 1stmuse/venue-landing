@@ -28,34 +28,35 @@ class Discount extends Component {
         return (
             <div className='center_wrapper'>
                 <div className='discount_wrapper'>
+                    <div className='d-item'>
+                        <Fade 
+                        onReveal={()=>this.porcentage()}
+                        >
+                            <div className='discount_porcentage'>
+                                <span>{this.state.discountStart}% </span>
+                                <sapn>OFF</sapn>
+                            </div>
+                        </Fade>
+                    </div>
+                    <div className='d-item'>  
+                        <Slide right>
+                            <div className='discount_description'>
+                                <h3>Early birds tickets</h3>
 
-                    <Fade 
-                    onReveal={()=>this.porcentage()}
-                    >
-                        <div className='discount_porcentage'>
-                            <span>{this.state.discountStart}% </span>
-                            <sapn>OFF</sapn>
-                        </div>
-                    </Fade>
-                   
-                    <Slide right>
-                        <div className='discount_description'>
-                            <h3>Early birds tickets</h3>
+                                <p>better but this ticket in 
+                                    time to get eyes blazing percent off and have fun
+                                </p>
+                                
+                                <MyButton
+                                    text='Purchase ticket'
+                                    bck='#ffa800'
+                                    color='#ffffff'
+                                    link='google.com'
+                                />
+                            </div>
 
-                            <p>better but this ticket in 
-                                sdcsfvdgbvdfbhkigefrpl,mgnkj,klsxcrfhyhkjnhngnjmkhgnh
-                                time to get eyes blazing percent off and have fun</p>
-                            
-                            <MyButton
-                                text='Purchase ticket'
-                                bck='#ffa800'
-                                color='#ffffff'
-                                link='google.com'
-                            />
-
-                        </div>
-
-                    </Slide>
+                        </Slide>
+                    </div>
                     
                 </div>
                 

@@ -44,7 +44,7 @@ class TimeUntil extends Component {
         return (
            <Slide left delay={1000} >
                 <div className='countdown_wrapper'>
-                <div className='countdown_yop'>Event starts in</div>
+                <div className='countdown_top'>Event starts in</div>
                 <div className='countdown_bottom'>
                     <div className='countdown_item'>
                         <div className='countdown_time'>{this.state.days} </div>

@@ -22,12 +22,12 @@ class Pricing extends Component {
 
       showBoxes=()=>(
           this.state.prices.map((box, i)=>(
+            <div className='pricing_item'>
               <Zoom delay={this.state.delay[i]} key={i} >
-                   <div className='pricing_item'>
                   <div className='pricing_inner_wrapper'>
                       <div className='pricing_title'>
-                          <span>${this.state.prices[i]} </span>
-                          <span>{this.state.positions[i]} </span>
+                        <span>${this.state.prices[i]} </span>
+                        <span>{this.state.positions[i]} </span>
                       </div>
                       <div className='pricing_description'>{this.state.desc[i]} </div>
                       <div className='pricing_buttons'>
@@ -39,9 +39,8 @@ class Pricing extends Component {
                         />
                       </div>
                   </div>
-
-              </div>
               </Zoom>
+            </div>
           ))
          
       )

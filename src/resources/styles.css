@@ -131,7 +131,15 @@ footer .footer_copyright {
     background: #d93d00;
     padding: 10px 20px;
 }
-
+@media screen and (max-width:700px){
+    .countdown_time{
+        padding: 5px 10px !important;
+        font-size: 30px !important;
+    }
+    .countdown_wrapper{
+        padding: 0px;
+    }
+}
 .countdown_wrapper .countdown_time {
     font-size: 70px;
     border-right: 1px solid #F44336;
@@ -154,12 +162,26 @@ footer .footer_copyright {
 
 .vn_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    width: 80%;
+    border: 1px solid red;
+    margin: 0 auto;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     padding: 170px 0px;
+}
+@media screen and (max-width:800px){
+    .vn_wrapper{
+        width: 100%;
+    }
+}
+@media screen and (max-width:800px){
+    .vn_item:first-child{
+        margin-bottom: 70px;
+    }
 }
 
 .vn_item {
-    width:50%;
+    border: 1px solid green;
     color:#ffffff;
     text-align: center;
 }
@@ -167,7 +189,7 @@ footer .footer_copyright {
 .vn_item .vn_outer {
     width: 300px;
     border: 2px solid #828282;
-    margin: auto;
+    /* margin: auto; */
     padding: 5px;
 }
 
@@ -203,7 +225,7 @@ footer .footer_copyright {
     left: 124px;
 }
 
-.vn_item .vn_title {
+.vn_title {
     font-size: 28px;
     margin: 90px 0px 20px 0px;
     border-bottom: 1px solid #5d5d5d;
@@ -243,6 +265,12 @@ footer .footer_copyright {
 .discount_wrapper .discount_porcentage {
     padding-right: 100px;
 }
+.d-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
 
 .discount_wrapper .discount_porcentage span:nth-child(1) {
     color: #ff4800;
@@ -272,6 +300,9 @@ footer .footer_copyright {
     font-size: 18px;
     font-weight: 300;
 }
+.discount_description p {
+    width: 200px;
+}
 
 /*====================
         PRICING
@@ -279,6 +310,7 @@ footer .footer_copyright {
 
 .pricing_section {
     padding: 70px 0px;
+    width: 100vw;
 }
 
 
@@ -293,10 +325,11 @@ footer .footer_copyright {
 .pricing_wrapper {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
-.pricing_wrapper .pricing_item{
+.pricing_item{
     flex-grow: 1;
-    width: 33%;
+    width: 300px;
     padding: 20px;
     box-sizing: border-box;
 }
