@@ -260,7 +260,7 @@ footer .footer_copyright {
     padding: 70px 0px;
 }
 @media screen and (max-width:600px){
-    .discount_porcentage:first-child{
+    .discount_porcentage:{
         padding: 10px !important;
         font-size: 70px !important;
     }
