@@ -163,7 +163,6 @@ footer .footer_copyright {
 .vn_wrapper {
     display: grid;
     width: 80%;
-    border: 1px solid red;
     margin: 0 auto;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -174,14 +173,13 @@ footer .footer_copyright {
         width: 100%;
     }
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:600px){
     .vn_item:first-child{
         margin-bottom: 70px;
     }
 }
 
 .vn_item {
-    border: 1px solid green;
     color:#ffffff;
     text-align: center;
 }
@@ -261,7 +259,11 @@ footer .footer_copyright {
     display: flex;
     padding: 70px 0px;
 }
-
+@media screen and (max-width:600px){
+    .discount_porcentage:first-child{
+        padding: 10px !important;
+    }
+}
 .discount_wrapper .discount_porcentage {
     padding-right: 100px;
 }
