@@ -264,6 +264,11 @@ footer .footer_copyright {
         padding: 0px !important;
         font-size: 70px !important;
     }
+    .discount_porcentage{
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
 }
 .discount_wrapper .discount_porcentage {
     padding-right: 100px;
