@@ -10,7 +10,7 @@ const Featured = () => {
 
             <div className='artist_name'>
                 <div className='wrapper'>
-                    Arian Grande
+                    DAVIDO OBO
                 </div>
             </div>
 

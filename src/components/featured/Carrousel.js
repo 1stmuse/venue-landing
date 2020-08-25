@@ -1,10 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
 
-import slide_one from '../../resources/images/slide_one.jpg';
-import slide_two from '../../resources/images/slide_two.jpg';
-import slide_three from '../../resources/images/slide_three.jpg';
-
 
 const Carrousel = () => {
 
@@ -28,7 +24,8 @@ const Carrousel = () => {
                    <div 
                         className="carrousel_image"
                         style={{
-                            background:`url(${slide_one})`,
+                            // background:`url(${slide_one})`,
+                            background: `url(https://ichef.bbci.co.uk/news/640/cpsprodpb/860D/production/_99371343_gettyimages-882097926.jpg)`,
                             height:`${window.innerHeight}px`
                         }}
                    ></div>
@@ -37,7 +34,7 @@ const Carrousel = () => {
                     <div 
                         className="carrousel_image"
                         style={{
-                            background:`url(${slide_two})`,
+                            background:`url(https://i.ytimg.com/vi/WWYc2ezruO4/maxresdefault.jpg)`,
                             height:`${window.innerHeight}px`
                         }}
                    ></div>
@@ -46,7 +43,7 @@ const Carrousel = () => {
                     <div 
                         className="carrousel_image"
                         style={{
-                            background:`url(${slide_three})`,
+                            background:`url(https://media.ticketmaster.com/en-us/dam/a/104/780c37cf-e460-4efa-a6f8-9555269aa104_770641_TABLET_LANDSCAPE_LARGE_16_9.jpg)`,
                             height:`${window.innerHeight}px`
                         }}
                    ></div>
